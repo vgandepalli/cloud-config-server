@@ -2,8 +2,8 @@ spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/springboot1
-    username:AppAdmin
-    password:praveen
+    username: AppAdmin
+    password: praveen
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
