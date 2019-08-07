@@ -2,7 +2,7 @@ message: praveen
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/springbootdev
+    url: jdbc:mysql://localhost:3306/springboottst
     username: root
     password: 
   jpa:
