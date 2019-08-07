@@ -1,11 +1,13 @@
-spring:
-  datasource:
+--- 
+meassge: "Hi TST"
+spring: 
+  datasource: 
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/springboottst
+    password: ~
+    url: "jdbc:mysql://localhost:3306/springboottst"
     username: root
-    password: 
-  jpa:
-    hibernate.ddl-auto: update
+  jpa: 
     generate-ddl: true
+    hibernate.ddl-auto: update
     show-sql: true
-meassge: Hi TST
+
