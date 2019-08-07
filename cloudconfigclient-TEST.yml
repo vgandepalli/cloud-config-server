@@ -1,12 +1,11 @@
-meassge: HiTST
-spring: 
-  datasource: 
+message: praveen
+spring:
+  datasource:
     driverClassName: com.mysql.jdbc.Driver
-    password: ~
-    url: "jdbc:mysql://localhost:3306/springboottst"
+    url: jdbc:mysql://localhost:3306/springbootdev
     username: root
-  jpa: 
-    generate-ddl: true
+    password: 
+  jpa:
     hibernate.ddl-auto: update
+    generate-ddl: true
     show-sql: true
-
