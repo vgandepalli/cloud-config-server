@@ -1,5 +1,4 @@
---- 
-meassge: "Hi TST"
+meassge: HiTST
 spring: 
   datasource: 
     driverClassName: com.mysql.jdbc.Driver
