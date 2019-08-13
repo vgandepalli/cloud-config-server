@@ -1,11 +1,2 @@
 message: praveen
-spring:
-  datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/springbootdev
-    username: root
-    password: 
-  jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
+name: raju dev
