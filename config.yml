@@ -1,0 +1,15 @@
+jwt:
+    password: $2a$10$eg0VKffGOpG2Qj8msNeeYOPV8I07y.gpncykzCfaan5s4SEB2IeAu
+    secret: sdmApp
+server:
+    port: 8085
+spring:
+    datasource:
+        password: lokam001
+        url: jdbc:mysql://192.168.1.208:3306/testdatabase?autoReconnect=true&zeroDateTimeBehavior=convertToNull
+        username: miracledb
+    jpa:
+        hibernate:
+            ddl-auto: update
+token:
+    name: praveen
