@@ -1,0 +1,44 @@
+spring:
+    jpa:
+        database-platform: org.hibernate.dialect.Oracle10gDialect
+        hibernate:
+          ddl-auto: none
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: oracle.jdbc.OracleDriver
+        hikari:
+         minimum-idle: 5
+         maximum-pool-size: 30
+         idle-timeout: 30000
+         connection-timeout: 30000
+         max-lifetime: 2000000
+         pool-name: SpringBootJPAHikariCP
+    
+        
+        ################TEST/LOCAL#################
+        password: dmaas
+        url: jdbc:oracle:thin:@172.17.12.53:1521:dmaas
+        username: dmaas
+        #################ICC_STAGE######################
+#        password: synergy23
+#        url: jdbc:oracle:thin:@zucndmsdbiccr1.mcd.com:1521:DMCCNAD2
+#        username: CC2NASTG
+         #################ICC_PRODUCTION######################
+#        password: fortune23
+#        url: jdbc:oracle:thin:@zucpdmsdbiccr1.mcd.com:1521:DMCCNAP2
+#        username: CC2NAPRD
+         #################ICC_PRODUCTIONDisasterMGMT######################
+#        password: fortune23
+#        url: jdbc:oracle:thin:@zucpdmsdbiccr2.mcd.com:1521:DMCCNAP2DR
+#        username: CC2NAPRD
+
+
+
+script:
+  createDirLocation: /app/ICC/portalLogs/scripts/registerstore.sh
+  activateStoreLocation: /app/ICC/portalLogs/scripts/activatestore.sh
+  deActivateStoreLocation: /app/ICC/portalLogs/scripts/deactivatestore.sh
+
+basicAuth:
+  userName: japanservice
+  password: G1nT0nic
